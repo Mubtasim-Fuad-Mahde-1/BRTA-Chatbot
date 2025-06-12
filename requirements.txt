@@ -1,0 +1,12 @@
+#PDF to IMAGE OCR 
+pytesseract
+#PDF to IMAGE
+pdf2image
+#Core dependencies
+python-dotenv
+pydantic
+pathlib
+#AI dependencies
+google-generativeai
+pinecone
+crewai
