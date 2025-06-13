@@ -10,7 +10,7 @@ INDEX_NAME=brta-index
 
 GOOGLE_API_KEY=AIzaSyDVw5eA-bGO2F_drHmZZb-yeMEYcySm5bs
 
-GEMINI_MODEL=gemini/gemini-2.5-flash-preview-05-20
+CHAT_MODEL=gemini/gemini-2.5-flash-preview-05-20
 
 EMBED_MODEL=models/text-embedding-004
 
@@ -22,13 +22,18 @@ VECTOR_DIM=768
 2. In terminal run this command - docker build -t bangla-extractor .
 3. Then run this command - docker run --rm -it --env-file .env -p 8000:8000 bangla-extractor
 
+# How to run chatbot?
+
+1. Install docker desktop
+2. in terminal run this command - docker build -t brta-chatbot .
+3. Then run this command - docker run --rm -it --env-file .env -p 8000:8000 brta-chatbot
+
 # How much progress made-
 
 * processing pdf and text file complete
 * uploading processed pdf and text file to vector db complete
+* Chatbot integration with tool and streamlit ui complete
 
 # To do:
 
-1. Implement a chatbot to retrive information from pinecone database
-2. create a streamlit frontend to test the chatbot
-3. collect more files and data from BRTA website
+1. collect more files and data from BRTA website

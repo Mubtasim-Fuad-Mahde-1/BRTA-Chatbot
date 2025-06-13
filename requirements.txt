@@ -5,9 +5,11 @@ pdf2image
 pillow
 #Core dependencies
 python-dotenv
-#pydantic
+pydantic
 pathlib
 #AI dependencies
 google-generativeai
 pinecone
-#crewai
+crewai
+streamlit>=1.28.0
+pandas
